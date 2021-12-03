@@ -5,9 +5,10 @@ import java.util.ArrayList;
 
 public class Main {
     public static void main(String[] args) {
-                Bank bank = new Bank();
+        Bank bank = new Bank();
         BankService bankService = new BankService();
-        Client client = new Client("Yuri", Gender.MALE);
+        System.out.printf("this.overdraft");
+        Client client = new Client("Yuriuhuhi", Gender.MALE);
         client.accounts = new ArrayList<>();
         CheckingAccount account1 = new CheckingAccount(1,300, 100);
         SavingAccount account2 = new SavingAccount(1,300);

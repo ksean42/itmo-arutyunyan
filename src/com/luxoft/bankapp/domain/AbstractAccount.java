@@ -9,7 +9,11 @@ public class AbstractAccount implements Account{
     public AbstractAccount(int id,double balance, double overdraft){
         this.balance = balance;
         this.id = id;
+        if(overdraft < 0) {
+            throw new IllegalArgumentException("debil");
+        }
         this.overdraft = overdraft;
+        System.out.println(this.overdraft);
     }
 
     public AbstractAccount(int id, double balance) {
