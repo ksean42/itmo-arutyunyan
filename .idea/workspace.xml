@@ -2,42 +2,104 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5d5f5105-4868-44a4-b49b-62d23736551b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/out/production/Lux/com/luxoft/bankapp/domain/AbstractAccount.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lux/com/luxoft/bankapp/domain/Account.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lux/com/luxoft/bankapp/domain/Bank.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lux/com/luxoft/bankapp/domain/CheckingAccount.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lux/com/luxoft/bankapp/domain/Client.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lux/com/luxoft/bankapp/domain/Gender.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lux/com/luxoft/bankapp/domain/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lux/com/luxoft/bankapp/domain/MessagePrinter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lux/com/luxoft/bankapp/domain/SavingAccount.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lux/com/luxoft/bankapp/service/BankService.class" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/luxoft/bankapp/exceptions/BankException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/luxoft/bankapp/exceptions/ClientExistsEsception.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/luxoft/bankapp/exceptions/NotEnoughFundsException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/luxoft/bankapp/exceptions/OverdraftLimitExceededException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lux.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/luxoft/com/luxoft/bankapp/domain/AbstractAccount.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/luxoft/com/luxoft/bankapp/domain/AbstractAccount.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/luxoft/com/luxoft/bankapp/domain/CheckingAccount.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/luxoft/com/luxoft/bankapp/domain/CheckingAccount.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/luxoft/com/luxoft/bankapp/domain/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/luxoft/com/luxoft/bankapp/domain/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/luxoft/com/luxoft/bankapp/domain/SavingAccount.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/luxoft/com/luxoft/bankapp/domain/SavingAccount.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/luxoft/bankapp/domain/AbstractAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/luxoft/bankapp/domain/AbstractAccount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/luxoft/bankapp/domain/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/luxoft/bankapp/domain/Account.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/luxoft/bankapp/domain/CheckingAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/luxoft/bankapp/domain/CheckingAccount.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/luxoft/bankapp/domain/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/luxoft/bankapp/domain/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/luxoft/bankapp/domain/SavingAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/luxoft/bankapp/domain/SavingAccount.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="ProjectId" id="21mwShKGFeWd3ySMUDirYtn0ymm" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/.idea" />
+    <property name="DatabaseDriversLRU" value="mongo" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/.idea" />
     </key>
   </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application">
+      <option name="ALTERNATIVE_JRE_PATH" value="openjdk-17" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="com.luxoft.bankapp.domain.Main" />
+      <module name="luxoft" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5d5f5105-4868-44a4-b49b-62d23736551b" name="Changes" comment="" />
+      <created>1638559572491</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1638559572491</updated>
+      <workItem from="1638559576888" duration="4101000" />
+      <workItem from="1638892439315" duration="3121000" />
+      <workItem from="1638911002994" duration="118000" />
+      <workItem from="1638911165335" duration="634000" />
+      <workItem from="1638961144453" duration="1010000" />
+    </task>
     <servers />
   </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
   <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Lux$Main.ic" NAME="Main Coverage Results" MODIFIED="1638558535429" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

@@ -1,16 +1,16 @@
 package com.luxoft.bankapp.domain;
+import com.luxoft.bankapp.exceptions.BankException;
 import com.luxoft.bankapp.service.BankService;
 import java.util.ArrayList;
 
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws BankException {
         Bank bank = new Bank();
         BankService bankService = new BankService();
-        System.out.printf("this.overdraft");
-        Client client = new Client("Yuriuhuhi", Gender.MALE);
+        Client client = new Client("Yuri", Gender.MALE);
         client.accounts = new ArrayList<>();
-        CheckingAccount account1 = new CheckingAccount(1,300, 100);
+        CheckingAccount account1 = new CheckingAccount(1,300, -100);
         SavingAccount account2 = new SavingAccount(1,300);
         client.addAccount(account1, account2);
         bank.clients = new ArrayList<>();

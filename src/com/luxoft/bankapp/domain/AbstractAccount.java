@@ -1,19 +1,21 @@
 package com.luxoft.bankapp.domain;
 
+import com.luxoft.bankapp.exceptions.NotEnoughFundsException;
+import com.luxoft.bankapp.exceptions.OverdraftLimitExceededException;
+
 public class AbstractAccount implements Account{
     protected double balance;
     protected double overdraft;
     private final int id;
 
 
-    public AbstractAccount(int id,double balance, double overdraft){
+    public AbstractAccount(int id,double balance, double overdraft)  {
         this.balance = balance;
         this.id = id;
         if(overdraft < 0) {
-            throw new IllegalArgumentException("debil");
+            throw new IllegalArgumentException("Overdraft can't be negative");
         }
         this.overdraft = overdraft;
-        System.out.println(this.overdraft);
     }
 
     public AbstractAccount(int id, double balance) {
@@ -27,8 +29,12 @@ public class AbstractAccount implements Account{
     }
 
     @Override
-    public void withdraw(double amount){
-        if(amount <= maximumAmountToWithdraw())
+    public void withdraw(double amount) throws NotEnoughFundsException {
+        if (amount < 0)
+            throw new IllegalArgumentException("Withdraw can't be negative");
+        if(amount > maximumAmountToWithdraw()){
+            throw new NotEnoughFundsException("Not enough funds!", this.balance, amount, this.id);
+        }
             balance -= amount;
     }
     public double getBalance(){
